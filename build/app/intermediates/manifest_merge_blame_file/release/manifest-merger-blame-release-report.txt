@@ -1,0 +1,323 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.shreewallet"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:2:5-66
+11-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:2:22-64
+12    <!--
+13         Required to query activities that can process text, see:
+14         https://developer.android.com/training/package-visibility and
+15         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+16
+17         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+18    -->
+19    <queries>
+19-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:40:5-45:15
+20        <intent>
+20-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:41:9-44:18
+21            <action android:name="android.intent.action.PROCESS_TEXT" />
+21-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:42:13-72
+21-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:42:21-70
+22
+23            <data android:mimeType="text/plain" />
+23-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:43:13-50
+23-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:43:19-48
+24        </intent>
+25    </queries>
+26
+27    <uses-feature android:name="android.hardware.camera.any" />
+27-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-64
+27-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:7:19-61
+28
+29    <uses-permission android:name="android.permission.CAMERA" />
+29-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-65
+29-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-62
+30    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+30-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-71
+30-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-68
+31    <uses-permission
+31-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-13:38
+32        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+32-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-65
+33        android:maxSdkVersion="28" />
+33-->[:camera_android_camerax] D:\Xampp\htdocs\kroschain\kroswallet\build\camera_android_camerax\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-35
+34    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+35
+36    <uses-feature
+36-->[:mobile_scanner] D:\Xampp\htdocs\kroschain\kroswallet\build\mobile_scanner\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-11:36
+37        android:name="android.hardware.camera"
+37-->[:mobile_scanner] D:\Xampp\htdocs\kroschain\kroswallet\build\mobile_scanner\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-47
+38        android:required="false" />
+38-->[:mobile_scanner] D:\Xampp\htdocs\kroschain\kroswallet\build\mobile_scanner\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-33
+39
+40    <permission
+40-->[androidx.core:core:1.13.1] C:\Users\asing\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+41        android:name="com.example.shreewallet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.13.1] C:\Users\asing\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.13.1] C:\Users\asing\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.example.shreewallet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+44-->[androidx.core:core:1.13.1] C:\Users\asing\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.13.1] C:\Users\asing\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+45    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+46    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+46-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\asing\.gradle\caches\transforms-3\9c8761b97dd2daea4255d9795b3b0a5b\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
+46-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\asing\.gradle\caches\transforms-3\9c8761b97dd2daea4255d9795b3b0a5b\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
+47
+48    <application
+49        android:name="android.app.Application"
+49-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:5:9-42
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.13.1] C:\Users\asing\.gradle\caches\transforms-3\c666c258fca39b3353b46678a6b928ab\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+51        android:extractNativeLibs="true"
+52        android:icon="@mipmap/ic_launcher"
+52-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:6:9-43
+53        android:label="Kroschain Wallet" >
+53-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:4:9-41
+54        <activity
+54-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:7:9-28:20
+55            android:name="com.example.shreewallet.MainActivity"
+55-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:8:13-41
+56            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+56-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:13:13-163
+57            android:exported="true"
+57-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:9:13-36
+58            android:hardwareAccelerated="true"
+58-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:14:13-47
+59            android:launchMode="singleTop"
+59-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:10:13-43
+60            android:taskAffinity=""
+60-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:11:13-36
+61            android:theme="@style/LaunchTheme"
+61-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:12:13-47
+62            android:windowSoftInputMode="adjustResize" >
+62-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:15:13-55
+63
+64            <!--
+65                 Specifies an Android theme to apply to this Activity as soon as
+66                 the Android process has started. This theme is visible to the user
+67                 while the Flutter UI initializes. After that, this theme continues
+68                 to determine the Window background behind the Flutter UI.
+69            -->
+70            <meta-data
+70-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:20:13-23:17
+71                android:name="io.flutter.embedding.android.NormalTheme"
+71-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:21:15-70
+72                android:resource="@style/NormalTheme" />
+72-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:22:15-52
+73
+74            <intent-filter>
+74-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:24:13-27:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:25:17-68
+75-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:25:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:26:17-76
+77-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:26:27-74
+78            </intent-filter>
+79        </activity>
+80        <!--
+81             Don't delete the meta-data below.
+82             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+83        -->
+84        <meta-data
+84-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:31:9-33:33
+85            android:name="flutterEmbedding"
+85-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:32:13-44
+86            android:value="2" />
+86-->D:\Xampp\htdocs\kroschain\kroswallet\android\app\src\main\AndroidManifest.xml:33:13-30
+87
+88        <activity
+88-->[:url_launcher_android] D:\Xampp\htdocs\kroschain\kroswallet\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-11:74
+89            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+89-->[:url_launcher_android] D:\Xampp\htdocs\kroschain\kroswallet\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-74
+90            android:exported="false"
+90-->[:url_launcher_android] D:\Xampp\htdocs\kroschain\kroswallet\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-37
+91            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+91-->[:url_launcher_android] D:\Xampp\htdocs\kroschain\kroswallet\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-71
+92
+93        <service
+93-->[androidx.camera:camera-camera2:1.4.1] C:\Users\asing\.gradle\caches\transforms-3\def03084d1fc6ba0e4af3480e64f7039\transformed\jetified-camera-camera2-1.4.1\AndroidManifest.xml:24:9-33:19
+94            android:name="androidx.camera.core.impl.MetadataHolderService"
+94-->[androidx.camera:camera-camera2:1.4.1] C:\Users\asing\.gradle\caches\transforms-3\def03084d1fc6ba0e4af3480e64f7039\transformed\jetified-camera-camera2-1.4.1\AndroidManifest.xml:25:13-75
+95            android:enabled="false"
+95-->[androidx.camera:camera-camera2:1.4.1] C:\Users\asing\.gradle\caches\transforms-3\def03084d1fc6ba0e4af3480e64f7039\transformed\jetified-camera-camera2-1.4.1\AndroidManifest.xml:26:13-36
+96            android:exported="false" >
+96-->[androidx.camera:camera-camera2:1.4.1] C:\Users\asing\.gradle\caches\transforms-3\def03084d1fc6ba0e4af3480e64f7039\transformed\jetified-camera-camera2-1.4.1\AndroidManifest.xml:27:13-37
+97            <meta-data
+97-->[androidx.camera:camera-camera2:1.4.1] C:\Users\asing\.gradle\caches\transforms-3\def03084d1fc6ba0e4af3480e64f7039\transformed\jetified-camera-camera2-1.4.1\AndroidManifest.xml:30:13-32:89
+98                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+98-->[androidx.camera:camera-camera2:1.4.1] C:\Users\asing\.gradle\caches\transforms-3\def03084d1fc6ba0e4af3480e64f7039\transformed\jetified-camera-camera2-1.4.1\AndroidManifest.xml:31:17-103
+99                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+99-->[androidx.camera:camera-camera2:1.4.1] C:\Users\asing\.gradle\caches\transforms-3\def03084d1fc6ba0e4af3480e64f7039\transformed\jetified-camera-camera2-1.4.1\AndroidManifest.xml:32:17-86
+100        </service>
+101
+102        <uses-library
+102-->[androidx.window:window:1.2.0] C:\Users\asing\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+103            android:name="androidx.window.extensions"
+103-->[androidx.window:window:1.2.0] C:\Users\asing\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+104            android:required="false" />
+104-->[androidx.window:window:1.2.0] C:\Users\asing\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+105        <uses-library
+105-->[androidx.window:window:1.2.0] C:\Users\asing\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+106            android:name="androidx.window.sidecar"
+106-->[androidx.window:window:1.2.0] C:\Users\asing\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+107            android:required="false" />
+107-->[androidx.window:window:1.2.0] C:\Users\asing\.gradle\caches\transforms-3\3e108fe9d597d03770ae82acaebb5b63\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+108
+109        <service
+109-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\asing\.gradle\caches\transforms-3\7c442205c5ac32e4e70c1da788090778\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
+110            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+110-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\asing\.gradle\caches\transforms-3\7c442205c5ac32e4e70c1da788090778\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:10:13-91
+111            android:directBootAware="true"
+111-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:17:13-43
+112            android:exported="false" >
+112-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\asing\.gradle\caches\transforms-3\7c442205c5ac32e4e70c1da788090778\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:11:13-37
+113            <meta-data
+113-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\asing\.gradle\caches\transforms-3\7c442205c5ac32e4e70c1da788090778\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:12:13-14:85
+114                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+114-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\asing\.gradle\caches\transforms-3\7c442205c5ac32e4e70c1da788090778\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:13:17-120
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\asing\.gradle\caches\transforms-3\7c442205c5ac32e4e70c1da788090778\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:14:17-82
+116            <meta-data
+116-->[com.google.mlkit:vision-common:17.3.0] C:\Users\asing\.gradle\caches\transforms-3\bb221b09e24dc57c611aaf3b8222c1a3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+117                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+117-->[com.google.mlkit:vision-common:17.3.0] C:\Users\asing\.gradle\caches\transforms-3\bb221b09e24dc57c611aaf3b8222c1a3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:13:17-124
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.mlkit:vision-common:17.3.0] C:\Users\asing\.gradle\caches\transforms-3\bb221b09e24dc57c611aaf3b8222c1a3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:14:17-82
+119            <meta-data
+119-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:20:13-22:85
+120                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+120-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:21:17-120
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:22:17-82
+122        </service>
+123
+124        <provider
+124-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:9:9-13:38
+125            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+125-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:10:13-78
+126            android:authorities="com.example.shreewallet.mlkitinitprovider"
+126-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:11:13-69
+127            android:exported="false"
+127-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:12:13-37
+128            android:initOrder="99" />
+128-->[com.google.mlkit:common:18.9.0] C:\Users\asing\.gradle\caches\transforms-3\9807d0f7c0d197b076554d9416f53573\transformed\jetified-common-18.9.0\AndroidManifest.xml:13:13-35
+129
+130        <activity
+130-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\asing\.gradle\caches\transforms-3\8470c89ba64407e2dd527ce11792b982\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+131            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+131-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\asing\.gradle\caches\transforms-3\8470c89ba64407e2dd527ce11792b982\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\asing\.gradle\caches\transforms-3\8470c89ba64407e2dd527ce11792b982\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+133-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\asing\.gradle\caches\transforms-3\8470c89ba64407e2dd527ce11792b982\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+134
+135        <meta-data
+135-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\asing\.gradle\caches\transforms-3\fdbb3cf6ca045f2cd53bc368c4b64c16\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+136            android:name="com.google.android.gms.version"
+136-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\asing\.gradle\caches\transforms-3\fdbb3cf6ca045f2cd53bc368c4b64c16\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+137            android:value="@integer/google_play_services_version" />
+137-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\asing\.gradle\caches\transforms-3\fdbb3cf6ca045f2cd53bc368c4b64c16\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+138
+139        <provider
+139-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\asing\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+140            android:name="androidx.startup.InitializationProvider"
+140-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\asing\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+141            android:authorities="com.example.shreewallet.androidx-startup"
+141-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\asing\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+142            android:exported="false" >
+142-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\asing\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+143            <meta-data
+143-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\asing\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+144                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+144-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\asing\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+145                android:value="androidx.startup" />
+145-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\asing\.gradle\caches\transforms-3\5d9083683aa46ad6646ca7a884bd56df\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+146            <meta-data
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+147                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+148                android:value="androidx.startup" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+149        </provider>
+150
+151        <receiver
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+152            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+153            android:directBootAware="false"
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+154            android:enabled="true"
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+155            android:exported="true"
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+156            android:permission="android.permission.DUMP" >
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+157            <intent-filter>
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+158                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+159            </intent-filter>
+160            <intent-filter>
+160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+161                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+162            </intent-filter>
+163            <intent-filter>
+163-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+164                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+165            </intent-filter>
+166            <intent-filter>
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+167                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\asing\.gradle\caches\transforms-3\1e1e8719823df11c58e964840aa823f6\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+168            </intent-filter>
+169        </receiver>
+170
+171        <service
+171-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\asing\.gradle\caches\transforms-3\9c8761b97dd2daea4255d9795b3b0a5b\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+172            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+172-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\asing\.gradle\caches\transforms-3\9c8761b97dd2daea4255d9795b3b0a5b\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+173            android:exported="false" >
+173-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\asing\.gradle\caches\transforms-3\9c8761b97dd2daea4255d9795b3b0a5b\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+174            <meta-data
+174-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\asing\.gradle\caches\transforms-3\9c8761b97dd2daea4255d9795b3b0a5b\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+175                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+175-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\asing\.gradle\caches\transforms-3\9c8761b97dd2daea4255d9795b3b0a5b\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+176                android:value="cct" />
+176-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\asing\.gradle\caches\transforms-3\9c8761b97dd2daea4255d9795b3b0a5b\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+177        </service>
+178        <service
+178-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\asing\.gradle\caches\transforms-3\b4e64a3471a767b6ec14537f8f362b5b\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+179            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+179-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\asing\.gradle\caches\transforms-3\b4e64a3471a767b6ec14537f8f362b5b\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+180            android:exported="false"
+180-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\asing\.gradle\caches\transforms-3\b4e64a3471a767b6ec14537f8f362b5b\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+181            android:permission="android.permission.BIND_JOB_SERVICE" >
+181-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\asing\.gradle\caches\transforms-3\b4e64a3471a767b6ec14537f8f362b5b\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+182        </service>
+183
+184        <receiver
+184-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\asing\.gradle\caches\transforms-3\b4e64a3471a767b6ec14537f8f362b5b\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+185            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+185-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\asing\.gradle\caches\transforms-3\b4e64a3471a767b6ec14537f8f362b5b\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+186            android:exported="false" />
+186-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\asing\.gradle\caches\transforms-3\b4e64a3471a767b6ec14537f8f362b5b\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+187    </application>
+188
+189</manifest>

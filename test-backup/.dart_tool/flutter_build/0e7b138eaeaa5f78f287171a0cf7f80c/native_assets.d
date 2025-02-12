@@ -1,0 +1,1 @@
+ D:\\Xampp\\htdocs\\shreewallet\\shreewallet\\.dart_tool\\flutter_build\\0e7b138eaeaa5f78f287171a0cf7f80c\\native_assets.yaml: 

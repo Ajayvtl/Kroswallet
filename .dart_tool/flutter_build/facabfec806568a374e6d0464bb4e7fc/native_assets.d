@@ -1,0 +1,1 @@
+ D:\\Xampp\\htdocs\\kroschain\\kroswallet\\.dart_tool\\flutter_build\\facabfec806568a374e6d0464bb4e7fc\\native_assets.yaml: 
